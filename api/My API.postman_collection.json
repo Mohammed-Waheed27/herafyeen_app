@@ -1,0 +1,1700 @@
+{
+	"info": {
+		"_postman_id": "168f418f-ba35-4cd6-979e-62ce6b3b8f3d",
+		"name": "My API",
+		"description": "API for managing users and authentication",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44553327"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "Auth",
+					"item": [
+						{
+							"name": "inactive-workers",
+							"item": [
+								{
+									"name": "/api/Auth/inactive-workers",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Auth/inactive-workers",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Auth",
+												"inactive-workers"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "<API Key>",
+														"description": "Added as a part of security scheme: apikey"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/Auth/inactive-workers",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Auth",
+														"inactive-workers"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "register",
+							"item": [
+								{
+									"name": "/api/Auth/register",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "multipart/form-data"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "Username",
+													"value": "mollit",
+													"type": "text"
+												},
+												{
+													"key": "FullName",
+													"value": "nostrud ea ut ut minim",
+													"type": "text"
+												},
+												{
+													"key": "Email",
+													"value": "elit mollit ex ut",
+													"type": "text"
+												},
+												{
+													"key": "Password",
+													"value": "dolor",
+													"type": "text"
+												},
+												{
+													"key": "Role",
+													"value": "0",
+													"description": " (This can only be one of 0,1,2)",
+													"type": "text"
+												},
+												{
+													"key": "Location",
+													"value": "ex enim",
+													"type": "text"
+												},
+												{
+													"key": "JobTitle",
+													"value": "Excepteur laborum",
+													"type": "text"
+												},
+												{
+													"key": "WorkingHours",
+													"value": "proident minim ut",
+													"type": "text"
+												},
+												{
+													"key": "Phone",
+													"value": "ad ipsum mollit",
+													"type": "text"
+												},
+												{
+													"key": "ProfileImage",
+													"type": "file",
+													"src": []
+												},
+												{
+													"key": "IDCardImage",
+													"type": "file",
+													"src": []
+												}
+											]
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Auth/register",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Auth",
+												"register"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "multipart/form-data"
+													},
+													{
+														"key": "Authorization",
+														"value": "<API Key>",
+														"description": "Added as a part of security scheme: apikey"
+													}
+												],
+												"body": {
+													"mode": "formdata",
+													"formdata": [
+														{
+															"key": "Username",
+															"value": "mollit",
+															"type": "text"
+														},
+														{
+															"key": "FullName",
+															"value": "nostrud ea ut ut minim",
+															"type": "text"
+														},
+														{
+															"key": "Email",
+															"value": "elit mollit ex ut",
+															"type": "text"
+														},
+														{
+															"key": "Password",
+															"value": "dolor",
+															"type": "text"
+														},
+														{
+															"key": "Role",
+															"value": "0",
+															"description": " (This can only be one of 0,1,2)",
+															"type": "text"
+														},
+														{
+															"key": "Location",
+															"value": "ex enim",
+															"type": "text"
+														},
+														{
+															"key": "JobTitle",
+															"value": "Excepteur laborum",
+															"type": "text"
+														},
+														{
+															"key": "WorkingHours",
+															"value": "proident minim ut",
+															"type": "text"
+														},
+														{
+															"key": "Phone",
+															"value": "ad ipsum mollit",
+															"type": "text"
+														},
+														{
+															"key": "ProfileImage",
+															"type": "file",
+															"src": []
+														},
+														{
+															"key": "IDCardImage",
+															"type": "file",
+															"src": []
+														}
+													]
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/Auth/register",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Auth",
+														"register"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "login",
+							"item": [
+								{
+									"name": "/api/Auth/login",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"username\": \"ut sunt anim\",\n  \"password\": \"commodo incididunt qui\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Auth/login",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Auth",
+												"login"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Authorization",
+														"value": "<API Key>",
+														"description": "Added as a part of security scheme: apikey"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"username\": \"ut sunt anim\",\n  \"password\": \"commodo incididunt qui\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/Auth/login",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Auth",
+														"login"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "logout",
+							"item": [
+								{
+									"name": "/api/Auth/logout",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Auth/logout",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Auth",
+												"logout"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "<API Key>",
+														"description": "Added as a part of security scheme: apikey"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/Auth/logout",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Auth",
+														"logout"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "activate-worker",
+							"item": [
+								{
+									"name": "{userId}",
+									"item": [
+										{
+											"name": "/api/Auth/activate-worker/:userId",
+											"request": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/Auth/activate-worker/:userId",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Auth",
+														"activate-worker",
+														":userId"
+													],
+													"variable": [
+														{
+															"key": "userId",
+															"value": "officia exercitation Duis est eiusmod",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "OK",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Authorization",
+																"value": "<API Key>",
+																"description": "Added as a part of security scheme: apikey"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/Auth/activate-worker/:userId",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"Auth",
+																"activate-worker",
+																":userId"
+															],
+															"variable": [
+																{
+																	"key": "userId"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "text",
+													"header": [],
+													"cookie": [],
+													"body": ""
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Chat",
+					"item": [
+						{
+							"name": "create-session",
+							"item": [
+								{
+									"name": "/api/Chat/create-session",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"workerId\": \"Duis labore officia laborum\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Chat/create-session",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Chat",
+												"create-session"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Authorization",
+														"value": "<API Key>",
+														"description": "Added as a part of security scheme: apikey"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"workerId\": \"Duis labore officia laborum\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/Chat/create-session",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Chat",
+														"create-session"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "send-message",
+							"item": [
+								{
+									"name": "/api/Chat/send-message",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"chatSessionId\": 94872114,\n  \"message\": \"magna\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Chat/send-message",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Chat",
+												"send-message"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Authorization",
+														"value": "<API Key>",
+														"description": "Added as a part of security scheme: apikey"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"chatSessionId\": 94872114,\n  \"message\": \"magna\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/Chat/send-message",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Chat",
+														"send-message"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "messages",
+							"item": [
+								{
+									"name": "{sessionId}",
+									"item": [
+										{
+											"name": "/api/Chat/messages/:sessionId",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/Chat/messages/:sessionId?page=1&pageSize=20",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Chat",
+														"messages",
+														":sessionId"
+													],
+													"query": [
+														{
+															"key": "page",
+															"value": "1"
+														},
+														{
+															"key": "pageSize",
+															"value": "20"
+														}
+													],
+													"variable": [
+														{
+															"key": "sessionId",
+															"value": "57462384",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "OK",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Authorization",
+																"value": "<API Key>",
+																"description": "Added as a part of security scheme: apikey"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/Chat/messages/:sessionId?page=1&pageSize=20",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"Chat",
+																"messages",
+																":sessionId"
+															],
+															"query": [
+																{
+																	"key": "page",
+																	"value": "1"
+																},
+																{
+																	"key": "pageSize",
+																	"value": "20"
+																}
+															],
+															"variable": [
+																{
+																	"key": "sessionId"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "text",
+													"header": [],
+													"cookie": [],
+													"body": ""
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "close-session",
+							"item": [
+								{
+									"name": "/api/Chat/close-session",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"chatSessionId\": -11293894,\n  \"rating\": -7905855,\n  \"review\": \"in culpa\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Chat/close-session",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Chat",
+												"close-session"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Authorization",
+														"value": "<API Key>",
+														"description": "Added as a part of security scheme: apikey"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"chatSessionId\": -11293894,\n  \"rating\": -7905855,\n  \"review\": \"in culpa\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/Chat/close-session",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Chat",
+														"close-session"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "my-sessions",
+							"item": [
+								{
+									"name": "/api/Chat/my-sessions",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Chat/my-sessions",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Chat",
+												"my-sessions"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "<API Key>",
+														"description": "Added as a part of security scheme: apikey"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/Chat/my-sessions",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Chat",
+														"my-sessions"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Profile",
+					"item": [
+						{
+							"name": "update-profile",
+							"item": [
+								{
+									"name": "/api/Profile/update-profile",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "multipart/form-data"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "FullName",
+													"value": "consequat laborum ipsum eiusmod",
+													"type": "text"
+												},
+												{
+													"key": "Phone",
+													"value": "in ex nulla velit commodo",
+													"type": "text"
+												},
+												{
+													"key": "Location",
+													"value": "culpa",
+													"type": "text"
+												},
+												{
+													"key": "JobTitle",
+													"value": "cillum incididunt sint",
+													"type": "text"
+												},
+												{
+													"key": "WorkingHours",
+													"value": "exercitation ut",
+													"type": "text"
+												},
+												{
+													"key": "ProfileImage",
+													"type": "file",
+													"src": []
+												}
+											]
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Profile/update-profile",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Profile",
+												"update-profile"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "multipart/form-data"
+													},
+													{
+														"key": "Authorization",
+														"value": "<API Key>",
+														"description": "Added as a part of security scheme: apikey"
+													}
+												],
+												"body": {
+													"mode": "formdata",
+													"formdata": [
+														{
+															"key": "FullName",
+															"value": "consequat laborum ipsum eiusmod",
+															"type": "text"
+														},
+														{
+															"key": "Phone",
+															"value": "in ex nulla velit commodo",
+															"type": "text"
+														},
+														{
+															"key": "Location",
+															"value": "culpa",
+															"type": "text"
+														},
+														{
+															"key": "JobTitle",
+															"value": "cillum incididunt sint",
+															"type": "text"
+														},
+														{
+															"key": "WorkingHours",
+															"value": "exercitation ut",
+															"type": "text"
+														},
+														{
+															"key": "ProfileImage",
+															"type": "file",
+															"src": []
+														}
+													]
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/Profile/update-profile",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Profile",
+														"update-profile"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "delete-profile",
+							"item": [
+								{
+									"name": "/api/Profile/delete-profile",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Profile/delete-profile",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Profile",
+												"delete-profile"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "<API Key>",
+														"description": "Added as a part of security scheme: apikey"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/Profile/delete-profile",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Profile",
+														"delete-profile"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Work",
+					"item": [
+						{
+							"name": "request-work",
+							"item": [
+								{
+									"name": "/api/Work/request-work",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"workerId\": \"dolor\",\n  \"description\": \"est tempor commodo et\",\n  \"location\": \"consequat aliquip laborum\",\n  \"price\": 15806440.730091825\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Work/request-work",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Work",
+												"request-work"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Authorization",
+														"value": "<API Key>",
+														"description": "Added as a part of security scheme: apikey"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"workerId\": \"dolor\",\n  \"description\": \"est tempor commodo et\",\n  \"location\": \"consequat aliquip laborum\",\n  \"price\": 15806440.730091825\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/Work/request-work",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Work",
+														"request-work"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "workers",
+							"item": [
+								{
+									"name": "/api/Work/workers",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Work/workers?jobTitle=officia exercitation Duis est eiusmod&location=officia exercitation Duis est eiusmod",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Work",
+												"workers"
+											],
+											"query": [
+												{
+													"key": "jobTitle",
+													"value": "officia exercitation Duis est eiusmod"
+												},
+												{
+													"key": "location",
+													"value": "officia exercitation Duis est eiusmod"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "<API Key>",
+														"description": "Added as a part of security scheme: apikey"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/Work/workers?jobTitle=officia exercitation Duis est eiusmod&location=officia exercitation Duis est eiusmod",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Work",
+														"workers"
+													],
+													"query": [
+														{
+															"key": "jobTitle",
+															"value": "officia exercitation Duis est eiusmod"
+														},
+														{
+															"key": "location",
+															"value": "officia exercitation Duis est eiusmod"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "worker",
+							"item": [
+								{
+									"name": "{id}",
+									"item": [
+										{
+											"name": "/api/Work/worker/:id",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/Work/worker/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Work",
+														"worker",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "officia exercitation Duis est eiusmod",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "OK",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Authorization",
+																"value": "<API Key>",
+																"description": "Added as a part of security scheme: apikey"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/Work/worker/:id",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"Work",
+																"worker",
+																":id"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "text",
+													"header": [],
+													"cookie": [],
+													"body": ""
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "my-requests",
+							"item": [
+								{
+									"name": "/api/Work/my-requests",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Work/my-requests",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Work",
+												"my-requests"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "<API Key>",
+														"description": "Added as a part of security scheme: apikey"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/Work/my-requests",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Work",
+														"my-requests"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "accept-request",
+							"item": [
+								{
+									"name": "{id}",
+									"item": [
+										{
+											"name": "/api/Work/accept-request/:id",
+											"request": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/Work/accept-request/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Work",
+														"accept-request",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "57462384",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "OK",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Authorization",
+																"value": "<API Key>",
+																"description": "Added as a part of security scheme: apikey"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/Work/accept-request/:id",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"Work",
+																"accept-request",
+																":id"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "text",
+													"header": [],
+													"cookie": [],
+													"body": ""
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "reject-request",
+							"item": [
+								{
+									"name": "{id}",
+									"item": [
+										{
+											"name": "/api/Work/reject-request/:id",
+											"request": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/Work/reject-request/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Work",
+														"reject-request",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "57462384",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "OK",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Authorization",
+																"value": "<API Key>",
+																"description": "Added as a part of security scheme: apikey"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/Work/reject-request/:id",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"Work",
+																"reject-request",
+																":id"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "text",
+													"header": [],
+													"cookie": [],
+													"body": ""
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "complete-request",
+							"item": [
+								{
+									"name": "{id}",
+									"item": [
+										{
+											"name": "/api/Work/complete-request/:id",
+											"request": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/Work/complete-request/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Work",
+														"complete-request",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "57462384",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "OK",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Authorization",
+																"value": "<API Key>",
+																"description": "Added as a part of security scheme: apikey"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/Work/complete-request/:id",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"Work",
+																"complete-request",
+																":id"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "text",
+													"header": [],
+													"cookie": [],
+													"body": ""
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "rate-worker",
+							"item": [
+								{
+									"name": "/api/Work/rate-worker",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"workRequestId\": 76243719,\n  \"rating\": 24105010,\n  \"comment\": \"culpa do magna\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Work/rate-worker",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Work",
+												"rate-worker"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"key": "Authorization",
+														"value": "<API Key>",
+														"description": "Added as a part of security scheme: apikey"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"workRequestId\": 76243719,\n  \"rating\": 24105010,\n  \"comment\": \"culpa do magna\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/Work/rate-worker",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Work",
+														"rate-worker"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "key",
+				"value": "Authorization",
+				"type": "string"
+			},
+			{
+				"key": "value",
+				"value": "{{apiKey}}",
+				"type": "string"
+			},
+			{
+				"key": "in",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "/"
+		}
+	]
+}

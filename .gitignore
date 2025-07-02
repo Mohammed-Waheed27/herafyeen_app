@@ -127,7 +127,5 @@ app.*.map.json
 
 # Project specific
 
-/api/
 
-# App specific
-/app apk/ 
+
