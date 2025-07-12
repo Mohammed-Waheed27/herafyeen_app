@@ -56,7 +56,7 @@ class ProfileHeaderSection extends StatelessWidget {
         ),
         SizedBox(height: 16.h),
         Text(
-          workerData.fullName ?? 'غير محدد',
+          'مينا',
           style: Theme.of(context).textTheme.headlineMedium!.copyWith(
                 fontWeight: FontWeight.bold,
               ),

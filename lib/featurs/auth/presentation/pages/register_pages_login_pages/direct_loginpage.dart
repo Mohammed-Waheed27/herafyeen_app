@@ -45,7 +45,7 @@ class _DirectLoginpageState extends State<DirectLoginpage> {
         body: SafeArea(
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 5.h),
-            child: Center(
+            child: SingleChildScrollView(
               child: BlocConsumer<AuthBloc, AuthState>(
                 listener: (context, state) {
                   if (state is AuthLoading) {

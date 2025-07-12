@@ -54,6 +54,7 @@ class UserHomePage extends StatelessWidget {
     return Scaffold(
       backgroundColor: lightColorScheme.onPrimary,
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         surfaceTintColor: Colors.transparent,
         centerTitle: true,
         backgroundColor: lightColorScheme.onPrimary,

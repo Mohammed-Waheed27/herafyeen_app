@@ -27,7 +27,7 @@ class WorkerWelcomeSection extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            "مرحباً، $workerFirstName",
+            "مرحباً، مينا",
             style: Theme.of(context).textTheme.headlineMedium!.copyWith(
                   fontWeight: FontWeight.bold,
                   color: lightColorScheme.scrim,

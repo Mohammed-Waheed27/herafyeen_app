@@ -72,15 +72,15 @@ class _UserRegisterPageState extends State<UserRegisterPage> {
                         // the national id
                         child: RegisterTextefilds(
                           label: "الرقم القومي",
-                          hint: "national id 16 digits",
+                          hint: "national id 14 digits",
                           controller: _idcard,
                           valodator: (value) {
                             if (value!.isEmpty) {
                               return "الرقم القومي مطلوب";
                             } else if (!RegExp(r'^[0-9]+$').hasMatch(value)) {
                               return "يجب ان يكون ارقام فقط";
-                            } else if (value.length != 16) {
-                              return "رقم قومي غير صالح يجب ان يكون 16 رقم";
+                            } else if (value.length != 14) {
+                              return "رقم قومي غير صالح يجب ان يكون 14 رقم";
                             }
                             return null;
                           },

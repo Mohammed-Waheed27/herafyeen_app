@@ -89,6 +89,7 @@ class _ProfilePageState extends State<ProfilePage> {
     return Scaffold(
       backgroundColor: lightColorScheme.onPrimary,
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         surfaceTintColor: Colors.transparent,
         backgroundColor: lightColorScheme.onPrimary,
         elevation: 0,
